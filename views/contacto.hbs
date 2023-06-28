@@ -1,0 +1,44 @@
+{{>header}}
+     <div class="black-background">
+    <div class="row text-center">
+        <section id="comuniquemonos">
+            <form action="" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Maria Vargas">
+                
+                <br><br>
+                
+                <label for="correo">Correo</label>
+                <input type="email" name="correo" placeholder="mariavargas@correo.com">
+                
+                <br><br>
+                
+                <label for="telefono">Teléfono</label>
+                <input type="telefono" name="telefono" placeholder="xxxxxxxxx">
+                
+                <br><br>
+                
+                <label for="">Motivo</label>
+                <input type="text" name="lista" list="motivo">
+                <datalist id="motivo">
+                    <option value="Felicitaciones"></option>
+                    <option value="Reclamos"></option>
+                    <option value="Consultas"></option>
+                    <option value="Sugerencias"></option>
+                </datalist>
+                
+                <br><br>
+                
+                <label for="motivo">Mensaje</label>
+                <br>
+                <textarea name="motivo" id="motivo" cols="30" rows="10"></textarea>
+                
+                <br><br>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </div>
+</div>
+
+{{>footer}}

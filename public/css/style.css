@@ -1,0 +1,13 @@
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+.black-background {
+    background-color: black;
+    padding: 100px;
+}
+
+#comuniquemonos {
+    border: 2px solid black;
+    padding: 20px;
+    background-color: white;
+}
