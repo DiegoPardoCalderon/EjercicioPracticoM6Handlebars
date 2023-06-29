@@ -18,10 +18,14 @@ app.listen(port, () => console.log(`Servidor ejecutando en el puerto ${port}`))
 const itemsMenu = [
     { label: 'Inicio', url: "/", active: false},
     { label: 'Galería', url: "/galeria", active: false},
-    { label: 'Contacto', url: "/contacto", active: false}
+    { label: 'Contacto', url: "/contacto", active: false},
+    { label: 'Null', url: "/Null", active: false}
 ]
 
 const itemsGaleria = [
+    "/img/galeria/galeria1.jpg",
+    "/img/galeria/galeria2.jpg",
+    "/img/galeria/galeria3.jpg",
     "/img/galeria/galeria1.jpg",
     "/img/galeria/galeria2.jpg",
     "/img/galeria/galeria3.jpg",
@@ -64,4 +68,13 @@ app.get("/contacto", (req, resp) => {
     })
     const itemsBreadcrumbs = ["Inicio","Contacto"]
     resp.render("contacto", {itemsMenu, itemsBreadcrumbs})
+})
+
+app.get("/null", (req, resp) => {
+    itemsMenu.map(item => {
+        item.active = item.url === '/null'
+        return item
+    })
+    const itemsBreadcrumbs = ["Inicio","Null"]
+    resp.render("null", {itemsMenu, itemsBreadcrumbs})
 })

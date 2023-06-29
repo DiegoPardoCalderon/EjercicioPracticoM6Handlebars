@@ -1,8 +1,10 @@
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        {{#each itemsBreadcrumbs}}
-            <li class="breadcrumb-item">{{ this }}</li>
-        {{/each}}
-    </ol>
+<div class="breadcrumbs">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          {{#each itemsBreadcrumbs}}
+            <li class="breadcrumb-item active" aria-current="page">{{ this }}</li>
+         {{/each}}
+        </ol>
+    </div>
 </nav>
    

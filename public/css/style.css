@@ -11,3 +11,22 @@
     padding: 20px;
     background-color: white;
 }
+.breadcrumbs {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .breadcrumbs li {
+    color: #170c7b;
+    text-decoration: none;
+  }
+  
+  .breadcrumbs li:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumbs li.active {
+    font-weight: bold;
+  }
+  
